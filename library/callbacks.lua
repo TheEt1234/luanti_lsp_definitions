@@ -142,7 +142,7 @@ function core.register_on_leaveplayer(f) end
 function core.register_on_authplayer(f) end
 
 -- * Deprecated: use `core.register_on_authplayer(name, ip, is_success)` instead.
----@deprecatred
+---@deprecated
 ---@param f fun(name:string, ip:string)
 function core.register_on_auth_fail(f) end
 
