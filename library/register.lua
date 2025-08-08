@@ -1,5 +1,7 @@
 ---@meta
 
+-- cspell:words digparams mese redef clust
+
 ---@param biome_def BiomeDef
 function core.register_biome(biome_def) end
 

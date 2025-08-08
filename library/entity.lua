@@ -1,5 +1,7 @@
 ---@meta
 
+-- cspell:ignore sunrisebg
+
 ---@class HudID
 
 -- Functions receive a "luaentity" table as `self`:

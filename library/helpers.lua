@@ -4,6 +4,8 @@
 --- So lua_api.md has a section for "utilities" and "helpers" and also "further helpers"
 --- I am going to have all of those be here
 
+-- cspell:words cpdir mvdir noprefetch
+
 ---@type string
 DIR_DELIM = '/'
 

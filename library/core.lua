@@ -2,6 +2,8 @@
 ---@meta
 ---@version 5.1, JIT # btw if you got a big complicated game, it might stop making sense targetting lua5.1
 
+-- cspell:ignore RRGGBB RRGGBBAA zstandard
+
 --- ALSO: My comments will be "Unofficial note: ..."
 
 --[[
