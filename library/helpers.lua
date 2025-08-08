@@ -130,9 +130,10 @@ function table.key_value_swap(t) end
 ---@return nil
 function table.shuffle(table, from, to, random_func) end
 
+---@param placer PlayerRef
 ---@param pointed_thing pointed_thing
 ---@return vector
-function core.pointed_thing_to_face_pos(pointed_thing) end
+function core.pointed_thing_to_face_pos(placer, pointed_thing) end
 
 ---@param uses integer
 ---@param initial_wear integer?
