@@ -120,7 +120,7 @@ function core.register_on_player_hpchange(f, modifier) end
 ---@param f fun(ObjectRef:ObjectRef, reason:PlayerHPChangeReason)
 function core.register_on_dieplayer(f) end
 
----@param f fun(ObjectRef:ObjectRef)
+---@param f fun(ObjectRef:ObjectRef):boolean?
 function core.register_on_respawnplayer(f) end
 
 ---@param f fun(name:string, ip:string)
