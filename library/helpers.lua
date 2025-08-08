@@ -588,6 +588,13 @@ core.EMERGE_FROM_DISK = core.EMERGE_FROM_DISK
 ---@type core.EMERGE_GENERATED
 core.EMERGE_GENERATED = core.EMERGE_GENERATED
 
+---@alias EmergeAction
+--- | core.EMERGE_CANCELLED
+--- | core.EMERGE_ERRORED
+--- | core.EMERGE_FROM_MEMORY
+--- | core.EMERGE_FROM_DISK
+--- | core.EMERGE_GENERATED
+
 -- * `core.emerge_area(pos1, pos2, [callback], [param])`
 --     * Queue all blocks in the area from `pos1` to `pos2`, inclusive, to be
 --       asynchronously fetched from memory, loaded from disk, or if inexistent,
@@ -610,7 +617,7 @@ core.EMERGE_GENERATED = core.EMERGE_GENERATED
 --           nil if the parameter was absent).
 ---@param pos1 vector
 ---@param pos2 vector
----@param callback fun(blockpos:vector, action: core.EMERGE_CANCELLED|core.EMERGE_ERRORED|core.EMERGE_FROM_MEMORY|core.EMERGE_FROM_DISK|core.EMERGE_GENERATED, calls_remaining:number, param:any?)
+---@param callback fun(blockpos:vector, action:EmergeAction , calls_remaining:number, param:any?)?
 ---@param param any?
 ---@async
 function core.emerge_area(pos1, pos2, callback, param) end
