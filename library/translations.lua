@@ -40,9 +40,10 @@ function core.get_translator(textdomain) end
 ---@param ... string
 function core.translate(textdomain, str, ...) end
 
+-- cspell:disable
 --[[
 * `core.translate_n(textdomain, str, str_plural, n, ...)` translates the
-  string `str` with the given `textdomain` for disambiguaion. The value of
+  string `str` with the given `textdomain` for disambiguation. The value of
   `n`, which must be a nonnegative integer, is used to decide whether to use
   the singular or the plural version of the string. Depending on the locale of
   the client, the choice between singular and plural might be more complicated,
@@ -102,6 +103,7 @@ and CoolGuy has set a German locale, they will see `Hallo CoolGuy, wie geht es
 dir heute?` when they join, and the `/playtime` command will show them `Du
 spielst seit 1 Minute.` or (for example) `Du spielst seit 4 Minuten.`
 ]]
+-- cspell:enable
 ---@nodiscard
 ---@param textdomain textdomain
 ---@param str string
