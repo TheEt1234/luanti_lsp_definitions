@@ -181,7 +181,7 @@
 --     * `{type="detached", name="creative"}`
 ---@param location inventory_location
 ---@return InvRef
-function core.get_inventory_location(location) end
+function core.get_inventory(location) end
 
 ---@nodiscard
 ---@param name string
