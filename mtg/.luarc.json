@@ -1,0 +1,18 @@
+{
+    "workspace.library": [
+        "/path/to/luanti_lls_addon/library"
+    ],
+    "diagnostics.disable": [
+        "lowercase-global",
+        "cast-local-type",
+        "duplicate-set-field",
+        "deprecated"
+    ],
+    "diagnostics.severity": {
+        "ambiguity-1": "Hint",
+        "count-down-loop": "Hint",
+        "discard-returns": "Hint",
+        "need-check-nil": "Hint"
+    },
+    "runtime.version": "LuaJIT"
+}

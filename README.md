@@ -1,6 +1,9 @@
 # Luanti LuaLS Definitions
 - **Status:** A bit incomplete for Luanti `5.13` and may have mistakes.
 - **Last Luanti commit accounted for:** `5ab66da6` (`5.13.X`)
+- **Target projects when testing:**
+  - [Minetest Game (MTG)](https://github.com/luanti-org/minetest_game) commit `8fbfc14c`\
+    With `mtg/.luarc.json` LuaLS config.
 
 <!-- cspell:ignore emmylua fgaz luarc nvim burnti -->
 
