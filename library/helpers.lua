@@ -885,7 +885,7 @@ function core.inventorycube(img1, img2, img3) end
 --     * If the optional `above` parameter is true and the `pointed_thing` refers
 --       to a node, then it will return the `above` position of the `pointed_thing`.
 ---@param pointed_thing pointed_thing
----@param above boolean
+---@param above boolean?
 ---@return vector
 function core.get_pointed_thing_position(pointed_thing, above) end
 
