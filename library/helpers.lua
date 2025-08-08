@@ -185,7 +185,7 @@ function core.is_singleplayer() end
 --- Oh [[boy]], vim macros are totally not going to get involved hehe
 --- OK I love vim macros
 
----@class core.features
+---@class FeatureFlags
 -- 0.4.7
 ---@field glasslike_framed  boolean?
 -- 0.4.7
@@ -301,8 +301,7 @@ function core.is_singleplayer() end
 -- The HTTP API supports the HEAD and PATCH methods (5.12.0)
 ---@field httpfetch_additional_methods  boolean?
 
----@return core.features
-function core.features() end
+core.features = {} --[[@as FeatureFlags]]
 
 ---@nodiscard
 ---@param arg string[]|string
