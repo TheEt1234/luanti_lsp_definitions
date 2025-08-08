@@ -28,7 +28,7 @@
 -- * `set_string(key, value)`: Value of `""` will delete the key.
 ---@field set_string fun(self, key:string, value:string)
 -- * `get_string(key)`: Returns `""` if key not present.
----@field get_string fun(self, key:string)
+---@field get_string fun(self, key:string):string
 -- * `set_int(key, value)`
 --     * The range for the value is system-dependent (usually 32 bits).
 --       The value will be converted into a string when stored.
@@ -41,6 +41,7 @@
 ---@field set_float fun(self, key:string, value:number)
 ---@field get_float fun(self, key:string):number
 ---@field get_keys fun(self):string[]
+---@field from_table fun(self,data:table?):boolean?
 ---@field to_table fun(self):{fields:table<string, string>,inventory:InvTable}
 
 -- * `core.get_mod_storage()`:
