@@ -230,7 +230,7 @@ function core.register_abm(abmdef) end
 --
 -- Used by `core.register_abm`.
 --
--- An active block modifier (ABM) is used to define a function that is continously
+-- An active block modifier (ABM) is used to define a function that is continuously
 -- and randomly called for specific nodes (defined by `nodenames` and other conditions)
 -- in active mapblocks.
 ---@class ABMDef
@@ -239,16 +239,16 @@ function core.register_abm(abmdef) end
 ---@field label  string
 -- Apply `action` function to these nodes.
 -- `group:groupname` can also be used here.
----@field nodenames string[]
+---@field nodenames string[]|string
 -- Only apply `action` to nodes that have one of, or any
 -- combination of, these neighbors.
 -- If left out or empty, any neighbor will do.
 -- `group:groupname` can also be used here.
----@field neighbors? string[]
+---@field neighbors? string[]|string
 -- Only apply `action` to nodes that have no one of these neighbors.
 -- If left out or empty, it has no effect.
 -- `group:groupname` can also be used here.
----@field without_neighbors? string[]
+---@field without_neighbors? string[]|string
 -- Operation interval in seconds
 ---@field interval number
 -- Probability of triggering `action` per-node per-interval is 1.0 / chance (integers only)
